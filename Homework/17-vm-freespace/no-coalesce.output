@@ -1,0 +1,359 @@
+seed 0
+size 100
+baseAddr 1000
+headerSize 0
+alignment -1
+policy FIRST
+listOrder ADDRSORT
+coalesce False
+numOps 100
+range 10
+percentAlloc 50
+allocList 
+compute True
+
+ptr[0] = Alloc(3) returned 1000 (searched 1 elements)
+Free List [ Size 1 ]: [ addr:1003 sz:97 ]
+
+Free(ptr[0])
+returned 0
+Free List [ Size 2 ]: [ addr:1000 sz:3 ][ addr:1003 sz:97 ]
+
+ptr[1] = Alloc(5) returned 1003 (searched 2 elements)
+Free List [ Size 2 ]: [ addr:1000 sz:3 ][ addr:1008 sz:92 ]
+
+Free(ptr[1])
+returned 0
+Free List [ Size 3 ]: [ addr:1000 sz:3 ][ addr:1003 sz:5 ][ addr:1008 sz:92 ]
+
+ptr[2] = Alloc(8) returned 1008 (searched 3 elements)
+Free List [ Size 3 ]: [ addr:1000 sz:3 ][ addr:1003 sz:5 ][ addr:1016 sz:84 ]
+
+Free(ptr[2])
+returned 0
+Free List [ Size 4 ]: [ addr:1000 sz:3 ][ addr:1003 sz:5 ][ addr:1008 sz:8 ][ addr:1016 sz:84 ]
+
+ptr[3] = Alloc(8) returned 1008 (searched 3 elements)
+Free List [ Size 3 ]: [ addr:1000 sz:3 ][ addr:1003 sz:5 ][ addr:1016 sz:84 ]
+
+Free(ptr[3])
+returned 0
+Free List [ Size 4 ]: [ addr:1000 sz:3 ][ addr:1003 sz:5 ][ addr:1008 sz:8 ][ addr:1016 sz:84 ]
+
+ptr[4] = Alloc(2) returned 1000 (searched 1 elements)
+Free List [ Size 4 ]: [ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:8 ][ addr:1016 sz:84 ]
+
+ptr[5] = Alloc(7) returned 1008 (searched 3 elements)
+Free List [ Size 4 ]: [ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1015 sz:1 ][ addr:1016 sz:84 ]
+
+Free(ptr[5])
+returned 0
+Free List [ Size 5 ]: [ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1016 sz:84 ]
+
+ptr[6] = Alloc(9) returned 1016 (searched 5 elements)
+Free List [ Size 5 ]: [ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1025 sz:75 ]
+
+ptr[7] = Alloc(9) returned 1025 (searched 5 elements)
+Free List [ Size 5 ]: [ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1034 sz:66 ]
+
+Free(ptr[4])
+returned 0
+Free List [ Size 6 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1034 sz:66 ]
+
+Free(ptr[6])
+returned 0
+Free List [ Size 7 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1034 sz:66 ]
+
+Free(ptr[7])
+returned 0
+Free List [ Size 8 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1025 sz:9 ][ addr:1034 sz:66 ]
+
+ptr[8] = Alloc(5) returned 1003 (searched 3 elements)
+Free List [ Size 7 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1025 sz:9 ][ addr:1034 sz:66 ]
+
+Free(ptr[8])
+returned 0
+Free List [ Size 8 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1025 sz:9 ][ addr:1034 sz:66 ]
+
+ptr[9] = Alloc(9) returned 1016 (searched 6 elements)
+Free List [ Size 7 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:7 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1034 sz:66 ]
+
+ptr[10] = Alloc(6) returned 1008 (searched 4 elements)
+Free List [ Size 7 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1034 sz:66 ]
+
+ptr[11] = Alloc(10) returned 1034 (searched 7 elements)
+Free List [ Size 7 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1044 sz:56 ]
+
+Free(ptr[10])
+returned 0
+Free List [ Size 8 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:5 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1044 sz:56 ]
+
+ptr[12] = Alloc(4) returned 1003 (searched 3 elements)
+Free List [ Size 8 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1044 sz:56 ]
+
+Free(ptr[12])
+returned 0
+Free List [ Size 9 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1044 sz:56 ]
+
+ptr[13] = Alloc(6) returned 1008 (searched 5 elements)
+Free List [ Size 8 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1044 sz:56 ]
+
+Free(ptr[11])
+returned 0
+Free List [ Size 9 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+Free(ptr[13])
+returned 0
+Free List [ Size 10 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+Free(ptr[9])
+returned 0
+Free List [ Size 11 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+ptr[14] = Alloc(6) returned 1008 (searched 5 elements)
+Free List [ Size 10 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:9 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+ptr[15] = Alloc(6) returned 1016 (searched 7 elements)
+Free List [ Size 10 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+ptr[16] = Alloc(2) returned 1000 (searched 1 elements)
+Free List [ Size 9 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:9 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+ptr[17] = Alloc(7) returned 1025 (searched 7 elements)
+Free List [ Size 9 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+Free(ptr[15])
+returned 0
+Free List [ Size 10 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:10 ][ addr:1044 sz:56 ]
+
+ptr[18] = Alloc(8) returned 1034 (searched 9 elements)
+Free List [ Size 10 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1042 sz:2 ][ addr:1044 sz:56 ]
+
+Free(ptr[18])
+returned 0
+Free List [ Size 11 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:56 ]
+
+Free(ptr[17])
+returned 0
+Free List [ Size 12 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:56 ]
+
+Free(ptr[16])
+returned 0
+Free List [ Size 13 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:56 ]
+
+ptr[19] = Alloc(8) returned 1034 (searched 11 elements)
+Free List [ Size 12 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1042 sz:2 ][ addr:1044 sz:56 ]
+
+ptr[20] = Alloc(9) returned 1044 (searched 12 elements)
+Free List [ Size 12 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1042 sz:2 ][ addr:1053 sz:47 ]
+
+Free(ptr[20])
+returned 0
+Free List [ Size 13 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+Free(ptr[19])
+returned 0
+Free List [ Size 14 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+Free(ptr[14])
+returned 0
+Free List [ Size 15 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+ptr[21] = Alloc(7) returned 1025 (searched 10 elements)
+Free List [ Size 14 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:8 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+ptr[22] = Alloc(7) returned 1034 (searched 11 elements)
+Free List [ Size 14 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+Free(ptr[21])
+returned 0
+Free List [ Size 15 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+Free(ptr[22])
+returned 0
+Free List [ Size 16 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:9 ][ addr:1053 sz:47 ]
+
+ptr[23] = Alloc(8) returned 1044 (searched 15 elements)
+Free List [ Size 16 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1053 sz:47 ]
+
+ptr[24] = Alloc(9) returned 1053 (searched 16 elements)
+Free List [ Size 16 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:38 ]
+
+ptr[25] = Alloc(2) returned 1000 (searched 1 elements)
+Free List [ Size 15 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:38 ]
+
+Free(ptr[23])
+returned 0
+Free List [ Size 16 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:38 ]
+
+Free(ptr[25])
+returned 0
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:38 ]
+
+Free(ptr[24])
+returned 0
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:38 ]
+
+ptr[26] = Alloc(7) returned 1025 (searched 10 elements)
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:38 ]
+
+Free(ptr[26])
+returned 0
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:38 ]
+
+ptr[27] = Alloc(4) returned 1003 (searched 3 elements)
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:38 ]
+
+Free(ptr[27])
+returned 0
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:38 ]
+
+ptr[28] = Alloc(10) returned 1062 (searched 18 elements)
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1072 sz:28 ]
+
+ptr[29] = Alloc(2) returned 1000 (searched 1 elements)
+Free List [ Size 17 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1072 sz:28 ]
+
+ptr[30] = Alloc(9) returned 1053 (searched 16 elements)
+Free List [ Size 16 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1072 sz:28 ]
+
+Free(ptr[28])
+returned 0
+Free List [ Size 17 ]: [ addr:1002 sz:1 ][ addr:1003 sz:4 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[31] = Alloc(2) returned 1003 (searched 2 elements)
+Free List [ Size 17 ]: [ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:6 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[32] = Alloc(3) returned 1008 (searched 4 elements)
+Free List [ Size 17 ]: [ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[30])
+returned 0
+Free List [ Size 18 ]: [ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[33] = Alloc(6) returned 1016 (searched 7 elements)
+Free List [ Size 17 ]: [ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[34] = Alloc(2) returned 1005 (searched 2 elements)
+Free List [ Size 16 ]: [ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[29])
+returned 0
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[35] = Alloc(8) returned 1044 (searched 13 elements)
+Free List [ Size 16 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[35])
+returned 0
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[36] = Alloc(7) returned 1025 (searched 8 elements)
+Free List [ Size 16 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[31])
+returned 0
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[36])
+returned 0
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1011 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[37] = Alloc(3) returned 1011 (searched 5 elements)
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[33])
+returned 0
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1016 sz:6 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[38] = Alloc(5) returned 1016 (searched 7 elements)
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:7 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[39] = Alloc(6) returned 1025 (searched 9 elements)
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[34])
+returned 0
+Free List [ Size 19 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1053 sz:9 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[40] = Alloc(9) returned 1053 (searched 17 elements)
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1034 sz:7 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[41] = Alloc(6) returned 1034 (searched 12 elements)
+Free List [ Size 18 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[42] = Alloc(8) returned 1044 (searched 15 elements)
+Free List [ Size 17 ]: [ addr:1000 sz:2 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[43] = Alloc(1) returned 1000 (searched 1 elements)
+Free List [ Size 17 ]: [ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[44] = Alloc(3) returned 1022 (searched 9 elements)
+Free List [ Size 16 ]: [ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[39])
+returned 0
+Free List [ Size 17 ]: [ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1025 sz:6 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[45] = Alloc(4) returned 1025 (searched 9 elements)
+Free List [ Size 17 ]: [ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[42])
+returned 0
+Free List [ Size 18 ]: [ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[43])
+returned 0
+Free List [ Size 19 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:8 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[46] = Alloc(5) returned 1044 (searched 16 elements)
+Free List [ Size 19 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+Free(ptr[32])
+returned 0
+Free List [ Size 20 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1062 sz:10 ][ addr:1072 sz:28 ]
+
+ptr[47] = Alloc(4) returned 1062 (searched 19 elements)
+Free List [ Size 20 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1072 sz:28 ]
+
+ptr[48] = Alloc(7) returned 1072 (searched 20 elements)
+Free List [ Size 20 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1079 sz:21 ]
+
+ptr[49] = Alloc(9) returned 1079 (searched 20 elements)
+Free List [ Size 20 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1088 sz:12 ]
+
+Free(ptr[44])
+returned 0
+Free List [ Size 21 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1088 sz:12 ]
+
+ptr[50] = Alloc(8) returned 1088 (searched 21 elements)
+Free List [ Size 21 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1096 sz:4 ]
+
+ptr[51] = Alloc(7) returned -1 (searched 21 elements)
+Free List [ Size 21 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1066 sz:6 ][ addr:1096 sz:4 ]
+
+ptr[52] = Alloc(5) returned 1066 (searched 20 elements)
+Free List [ Size 21 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1096 sz:4 ]
+
+ptr[53] = Alloc(2) returned 1003 (searched 4 elements)
+Free List [ Size 20 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1096 sz:4 ]
+
+Free(ptr[46])
+returned 0
+Free List [ Size 21 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:5 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1096 sz:4 ]
+
+Free(ptr[50])
+returned 0
+Free List [ Size 22 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:5 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1088 sz:8 ][ addr:1096 sz:4 ]
+
+Free(ptr[45])
+returned 0
+Free List [ Size 23 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:4 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1044 sz:5 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1088 sz:8 ][ addr:1096 sz:4 ]
+
+ptr[54] = Alloc(5) returned 1044 (searched 18 elements)
+Free List [ Size 22 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:4 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1088 sz:8 ][ addr:1096 sz:4 ]
+
+Free(ptr[53])
+returned 0
+Free List [ Size 23 ]: [ addr:1000 sz:1 ][ addr:1001 sz:1 ][ addr:1002 sz:1 ][ addr:1003 sz:2 ][ addr:1005 sz:2 ][ addr:1007 sz:1 ][ addr:1008 sz:3 ][ addr:1014 sz:1 ][ addr:1015 sz:1 ][ addr:1021 sz:1 ][ addr:1022 sz:3 ][ addr:1025 sz:4 ][ addr:1029 sz:2 ][ addr:1031 sz:1 ][ addr:1032 sz:2 ][ addr:1040 sz:1 ][ addr:1041 sz:1 ][ addr:1042 sz:2 ][ addr:1049 sz:3 ][ addr:1052 sz:1 ][ addr:1071 sz:1 ][ addr:1088 sz:8 ][ addr:1096 sz:4 ]
+
