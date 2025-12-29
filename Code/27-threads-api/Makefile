@@ -1,8 +1,8 @@
 
-all: threads lock
+all: threads lock cond-var
 
 clean:
-	rm -f ./bin/threads ./bin/lock
+	rm -f ./bin/threads ./bin/lock ./bin/cond-var
 
 threads:
 	gcc -o ./bin/threads ./threads.c -Wall -pthread
@@ -10,4 +10,7 @@ threads:
 lock:
 	gcc -o ./bin/lock ./lock.c -Wall -pthread
 
-.PHONY: all clean threads lock
+cond-var:
+	gcc -o ./bin/cond-var ./cond-var.c -Wall -pthread
+
+.PHONY: all clean threads lock cond-var
