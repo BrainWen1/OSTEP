@@ -1,10 +1,13 @@
 
-all: main
+all: threads lock
 
 clean:
-	rm -f ./bin/main
+	rm -f ./bin/threads ./bin/lock
 
-main:
-	gcc -o ./bin/main ./main.c -Wall -pthread
+threads:
+	gcc -o ./bin/threads ./threads.c -Wall -pthread
 
-.PHONY: all clean main
+lock:
+	gcc -o ./bin/lock ./lock.c -Wall -pthread
+
+.PHONY: all clean threads lock

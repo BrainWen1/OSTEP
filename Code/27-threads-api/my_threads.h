@@ -26,4 +26,28 @@ void *Malloc(size_t size) {
     return ptr;
 }
 
+int Pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr) {
+    int rc = pthread_mutex_init(mutex, mutexattr);
+    assert(rc == 0);
+    return rc;
+}
+
+int Pthread_mutex_lock(pthread_mutex_t *mutex) {
+    int rc = pthread_mutex_lock(mutex);
+    assert(rc == 0);
+    return rc;
+}
+
+int Pthread_mutex_unlock(pthread_mutex_t *mutex) {
+    int rc = pthread_mutex_unlock(mutex);
+    assert(rc == 0);
+    return rc;
+}
+
+int Pthread_mutex_destroy(pthread_mutex_t *mutex) {
+    int rc = pthread_mutex_destroy(mutex);
+    assert(rc == 0);
+    return rc;
+}
+
 #endif // MY_THREADS_API_Hs
